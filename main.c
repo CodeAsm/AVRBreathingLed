@@ -13,12 +13,13 @@ int main(void)
 Main entry program
 */
 
-  DDRC = 0xFF; //Nakes PORTC as Output	(thats pin PC0(23) till PC5(28))
-  while(1) //infinite loop
+  DDRD = 0xFF;				 //Makes PORTD as Output
+  while(1) 				 //infinite loop
    {
-     PORTC = 0xFF; //Turns ON All LEDs
+     PORTD = 0xFF;			 //Turns ON All LEDs
      _delay_ms(BLINK_DELAY_MS);
-     PORTC= 0x00; //Turns OFF All LEDs
+
+     PORTD= 0x00; 			 //Turns OFF All LEDs
      _delay_ms(BLINK_DELAY_MS);
    }
  
