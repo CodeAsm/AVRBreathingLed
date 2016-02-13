@@ -1,4 +1,3 @@
-
 #define F_CPU 16000000UL
 
 /**
@@ -72,7 +71,7 @@ hard
 		i += 1;
 		OCR1A = pwm;
 		if (i > arraySize)i=0;
-		_delay_ms(15);
+		_delay_ms(12);
 	}
 
 }
